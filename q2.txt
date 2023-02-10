@@ -1,0 +1,12 @@
+def print_pattern(input1, input2):
+    result = ''
+    for i in range(max(len(input1), len(input2))):
+        if i < len(input1):
+            result += input1[i]
+        if i < len(input2):
+            result += input2[i]
+    return result
+
+input1 = 'Samarthya'
+input2 = 'Club'
+print(print_pattern(input1, input2))
