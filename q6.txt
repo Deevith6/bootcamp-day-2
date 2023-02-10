@@ -1,0 +1,16 @@
+def center_column(matrix):
+    result = []
+    if len(matrix[0]) % 2 == 1:
+        center = len(matrix[0]) // 2
+        for row in matrix:
+            result.append(row[center])
+    else:
+        center = len(matrix[0]) // 2
+        for row in matrix:
+            result.append(row[center])
+    return result
+
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(center_column(matrix))
+matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+print(center_column(matrix))
